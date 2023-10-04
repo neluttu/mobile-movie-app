@@ -12,10 +12,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 <body class="bg-gradient-to-bl from-[#7abbee] to-[#676dc8] flex items-center justify-center min-h-screen font-nunito">
-	<section class="w-full max-w-[460px] bg-[#1d1f33] rounded-xl overflow-hidden">
-        <div id="movies" class="flex flex-col items-center justify-center text-white">
+	<section class="w-full min-h-screen sm:max-w-[460px] bg-[#1d1f33] overflow-hidden relative">
+        <div class="flex bg-no-repeat p-2 items-center justify-center border-b-[2px] border-b-[rgba(255,255,255,0.15)] bg-[rgba(0,0,0,0.8)] w-full absolute bottom-0 text-white h-[100px]">
+        asdasdasdasd
+        </div>
+        <div id="moviez" class="flex flex-col items-center justify-center text-white">
             <h1 class="py-5 bg-[#272a46] text-[#8ad1f7] text-xl font-[600] w-full relative text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="absolute cursor-pointer left-5" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7f94f5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -26,39 +30,55 @@
             <label for="search" class="w-full px-6 my-6">
                 <input type="text" name="search" id="search" class="border outline-none border-[#626493] bg-transparent rounded-full w-full px-5 py-4 placeholder:font-semibold placeholder:text-lg placeholder:text-[#626493]" placeholder="Search movies">
             </label>
-            <div class="flex items-start justify-between w-full px-5">
-                <p class="text-[#8ad1f7] font-bold">FANTASY/SCIENCE FICTION</p>
-                <span class="text-[#868ef4] flex items-center justify-center gap-1">
-                    <a href="#">See all</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0f1317" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M9 6c0 -.852 .986 -1.297 1.623 -.783l.084 .076l6 6a1 1 0 0 1 .083 1.32l-.083 .094l-6 6l-.094 .083l-.077 .054l-.096 .054l-.036 .017l-.067 .027l-.108 .032l-.053 .01l-.06 .01l-.057 .004l-.059 .002l-.059 -.002l-.058 -.005l-.06 -.009l-.052 -.01l-.108 -.032l-.067 -.027l-.132 -.07l-.09 -.065l-.081 -.073l-.083 -.094l-.054 -.077l-.054 -.096l-.017 -.036l-.027 -.067l-.032 -.108l-.01 -.053l-.01 -.06l-.004 -.057l-.002 -12.059z" stroke-width="0" fill="currentColor" />
-                      </svg>
-                </span>
-            </div>
-            <ul class="flex items-start justify-start w-full gap-5 px-5 mt-3 mb-8 [&>li]:shadow-[0px_1px_15px_5px_#16172E]">
-                <li class="w-[37%] min-h-[200px] shrink-0 rounded-tr-lg rounded-tl-lg overflow-hidden bg-[#272a46] self-stretch">
-                    <a href="#"><img src="https://m.media-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_QL75_UX190_CR0,8,190,281_.jpg"></a>
-                    <div class="flex items-start justify-center gap-1 pt-3 pb-2 pl-2 min-h-[60px]">
-                        <h2 class="text-sm grow">Arrival</h2>
-                        <span class="bg-[#20233b] self-center min-w-[35px] text-center p-2 text-xs text-[#a6ed5e]">8.4</span>
-                    </div>
-                </li>
-                <li class="w-[37%] min-h-[200px] shrink-0 rounded-tr-lg rounded-tl-lg overflow-hidden bg-[#272a46] self-stretch">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMjQwOTc0Mzg3Nl5BMl5BanBnXkFtZTgwOTg3NjI2NzE@._V1_QL75_UX190_CR0,0,190,281_.jpg">
-                    <div class="flex items-start justify-center gap-1 pt-3 pb-2 pl-2 min-h-[60px]">
-                        <h2 class="text-sm grow">The 5th Wave</h2>
-                        <span class="bg-[#20233b] self-center min-w-[35px] text-center p-2 text-xs text-[#a6ed5e]">5</span>
-                    </div>
-                </li>
-                <li class="w-[37%] min-h-[200px] shrink-0 rounded-tr-lg rounded-tl-lg overflow-hidden bg-[#272a46] self-stretch">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_QL75_UX190_CR0,0,190,281_.jpg">
-                    <div class="flex items-start justify-center gap-1 pt-3 pb-2 pl-2 min-h-[60px]">
-                        <h2 class="text-sm grow">Captain America: Civil War</h2>
-                        <span class="bg-[#20233b] self-center min-w-[35px] text-center p-2 text-xs text-[#a6ed5e]">5</span>
-                    </div>
-                </li>
-            </ul>
+            <div id="movies" class="h-[800px] overflow-y-auto"></div>
+            <script>
+                const ulElement = document.getElementById('movies');
+
+                let moviesHTML = '';
+                let ulList = false;
+                let currentCategory = null; 
+
+                titles.forEach((title, index) => {
+                    if (title.category !== currentCategory) {
+                        moviesHTML += `<div class="flex items-start justify-between w-full px-5">
+                                        <p class="text-[#8ad1f7] font-bold">${title.category}</p>
+                                        <span class="text-[#868ef4] flex items-center justify-center gap-1">
+                                            <a href="#">See all</a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0f1317" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path d="M9 6c0 -.852 .986 -1.297 1.623 -.783l.084 .076l6 6a1 1 0 0 1 .083 1.32l-.083 .094l-6 6l-.094 .083l-.077 .054l-.096 .054l-.036 .017l-.067 .027l-.108 .032l-.053 .01l-.06 .01l-.057 .004l-.059 .002l-.059 -.002l-.058 -.005l-.06 -.009l-.052 -.01l-.108 -.032l-.067 -.027l-.132 -.07l-.09 -.065l-.081 -.073l-.083 -.094l-.054 -.077l-.054 -.096l-.017 -.036l-.027 -.067l-.032 -.108l-.01 -.053l-.01 -.06l-.004 -.057l-.002 -12.059z" stroke-width="0" fill="currentColor" />
+                                            </svg>
+                                        </span>
+                                    </div>`;
+                        currentCategory = title.category;
+                    }
+
+                    if (index % 3 === 0) {
+                        moviesHTML += '<ul class="flex items-start justify-start w-full gap-5 px-5 mt-3 mb-8 [&>li]:shadow-[0px_1px_15px_5px_#16172E] overflow-x-scroll">';
+                        ulList = true;
+                    }
+
+
+                    const movieHTML = `
+                    <li class="w-[37%] min-h-[200px] shrink-0 rounded-tr-lg rounded-tl-lg overflow-hidden bg-[#272a46] self-stretch rounded-bl-sm rounded-br-sm mb-4">
+                        <a href="#" id="${title.id}"><img src="${title.image}"></a>
+                        <div class="flex items-start justify-center gap-1 pt-3 pb-2 pl-2 min-h-[60px]">
+                        <h2 class="text-sm grow">${title.title}</h2>
+                        <span class="bg-[#20233b] self-center min-w-[35px] text-center p-2 text-xs text-[#a6ed5e]">${title.score}</span>
+                        </div>
+                    </li>
+                    `;
+
+                    moviesHTML += movieHTML;
+
+                    if ((index + 1) % 3 === 0) {
+                        moviesHTML += '</ul>';
+                        ulList = false;
+                    }
+                });
+                ulElement.innerHTML = moviesHTML;
+            </script>
+
         </div>
     </section>
 </body>
