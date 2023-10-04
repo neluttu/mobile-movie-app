@@ -15,9 +15,9 @@
     <script src="main.js"></script>
 </head>
 <body class="bg-gradient-to-bl from-[#7abbee] to-[#676dc8] flex items-center justify-center h-screen font-nunito">
-	<section class="w-full max-w-[460px] bg-[#1d1f33] overflow-hidden h-full sm:h-[1000px] relative">
-        <!-- <div class="absolute h-[80px] w-full bottom-0 bg-black/80 z-20">asdasdasd</div> -->
-        <div id="moviez" class="flex flex-col items-start justify-start h-full text-white">
+	<section class="w-full max-w-[460px] bg-[#1d1f33] overflow-hidden h-full sm:h-[800px] relative shadow-[0px_8px_28px_15px_rgba(80,82,142,0.84)] sm:rounded-xl">
+        
+        <div class="flex flex-col items-start justify-start h-full text-white">
             <h1 class="py-5 bg-[#272a46] text-[#8ad1f7] text-xl font-[600] w-full relative text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="absolute cursor-pointer left-5" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7f94f5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -52,7 +52,7 @@
                     }
 
                     if (index % 3 === 0) {
-                        moviesHTML += '<ul class="flex items-start justify-start w-full gap-5 px-5 mt-3 mb-8 [&>li]:shadow-[0px_1px_15px_5px_#16172E] overflow-x-scroll">';
+                        moviesHTML += '<ul class="flex items-start justify-start w-full gap-5 px-5 mt-3 mb-4 [&>li]:shadow-[0px_1px_15px_5px_#16172E] overflow-x-scroll">';
                         ulList = true;
                     }
 
